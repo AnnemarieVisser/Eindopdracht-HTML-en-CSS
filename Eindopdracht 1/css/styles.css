@@ -1,0 +1,114 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F4F4F4;
+    overflow: auto;
+    height: 100%;
+    border-left: 1px solid #686895;
+    border-right: 1px solid #686895;
+    border-radius: 15px;
+    background: #23074d;
+    background: linear-gradient(90deg, #23074d, #cc5333);
+}
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+  
+header {
+  grid-column: span 3;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  color: white;
+}
+
+.headerimg{
+      height: 200px;
+      box-shadow: 1px 2px 5px black;
+      border-radius: 5px;
+}
+  
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.mainimg{
+   box-shadow: 1px 2px 5px black;
+   border-radius: 5px;
+   width:250px
+} 
+  
+nav {
+    padding: 0;
+}
+
+iframe{
+    width: 300;
+    border: 1px solid black;
+}
+   
+aside {
+    padding: 20px;
+    overflow:hidden;
+}
+  
+aside img{
+    width: 50px;
+}
+
+aside iframe{
+    width:250px;
+}
+
+footer {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+}
+
+footer p{
+      text-align: center;
+      font-size: small;
+}
+  
+h1 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*Media Queries */
+
+@media (min-width: 768px) {
+   .container {
+      display: grid;
+      grid-template-columns: 270px 1fr 200px;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .mainimg{
+       width:350px
+    } 
+
+    aside iframe{
+      width:150px;
+    }
+} 
+
+@media (min-width: 960px) {
+    .container {
+      max-width: 960px;
+      margin: auto;
+    }
+    .mainimg{
+      width:450px
+    } 
+}
