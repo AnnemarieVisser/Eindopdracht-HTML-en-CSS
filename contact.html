@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hondenschool Ayronna</title>
+  <link rel="stylesheet" href="css/flexstyles.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/contactform.css">
+  <link rel="icon" href="images/Flynn001.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="container">
+  <header>
+    <img src="images/header.png" alt="Een bordercollie" class="headerimg" />
+  </header>
+
+  <nav>
+    <div class="navbar collapsible-menu">
+      <input type="checkbox" id="menu">
+      <label for="menu"><img src="images/tik.png" alt="Menu" class="menuimg" /></label>
+      <div class="menu-content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="detectie.html">Wat is detectie?</a></li>
+          <li><a href="lessen.html">Lessen en Workshops</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Contactformulier</h1>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Naam: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>E-mailadres: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Telefoonnummer: <input type="tel" name="telephone" /></label>
+      </p>
+      <h3>Heb je al lessen bij mij gevolgd?</h3>
+      <p>
+        <label><input type="radio" name="gevolgd" />Ja</label> <br />
+        <label> <input type="radio" name="gevolgd" />Nee</label> <br />
+        <label><input type="radio" name="gevolgd" />Weet ik niet</label>
+      </p>
+      <h3>Waarover neem je contact op?</h3>
+      <p>
+        <label><input type="checkbox" name="informatie" />Ik wil informatie </label> <br />
+        <label><input type="checkbox" name="workshops" />Ik wil meer informatie over workshops </label><br />
+        <label><input type="checkbox" name="lessen" />Ik wil meer informatie over lessen </label><br />
+        <label><input type="checkbox" name="afspraak" />Ik wil een les of workshop boeken</label><br />
+        <label><input type="checkbox" name="inschrijven" />Ik wil mij inschrijven voor een workshop</label><br />
+        <label><input type="checkbox" name="anders" />Ik heb een andere vraag</label><br />
+      </p>
+      <p>
+        <label>Bericht: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+  </main>
+
+  <aside>
+    <h2>Links</h2>
+    <a href="https://www.facebook.com/annemarie.visser.50" target="_blank"><img src="images/fblogo.png"
+        alt="Facebook" /></a>
+    <a href="https://twitter.com/Narhuanna" target="_blank"><img src="images/twlogo.png" alt="Twitter" /></a><br />
+    <a href="https://www.instagram.com/narhuanna/" target="_blank"><img src="images/iglogo.png" alt="Instagram" /></a>
+    <a href="https://www.linkedin.com/in/annemarie-visser/" target="_blank"><img src="images/inlogo.png"
+        alt="LinkedIn" /></a><br />
+  </aside>
+
+  <footer>
+    <p>Hondenschool Ayronna<br />
+      Locatie: Sneek, Friesland
+    </p>
+    <p>Telefoonnummer: 0612345678<br />
+      E-mail: informatie@ayronna.nl
+    </p>
+    <p>
+      KVK: 12345678
+    </p>
+  </footer>
+
+</body>
+
+</html>
